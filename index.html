@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankamat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="atm-screen">
+            <h1>Bankamat</h1>
+            <div class="status-message">
+                <p id="status">Karta kiriting...</p>
+            </div>
+            <div class="input-section">
+                <input type="number" id="cardNumber" placeholder="Karta raqamini kiriting">
+                <button onclick="checkCard()">Karta tekshirish</button>
+            </div>
+            <div class="actions">
+                <button onclick="withdraw()">Pul yechish</button>
+                <button onclick="balance()">Balansni ko'rish</button>
+                <button onclick="exitATM()">Chiqish</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
